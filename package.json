@@ -7,9 +7,11 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build-dev": "cd android/ && ./gradlew assembleDebug && cd ../ && nautilus android/app/build/output/apk/debug/"
   },
   "dependencies": {
+    "nodejs-mobile-react-native": "^0.8.2",
     "react": "18.1.0",
     "react-native": "0.70.10"
   },
